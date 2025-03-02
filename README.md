@@ -16,15 +16,18 @@ In this repository, we propose a framework called PrivAI, which aims to privatiz
 
 ## Startup Instructions
 
-1) Pick up an image.
-2) Tune training parameters.
-3) Generate a latent vector.
-4) Pick up privact parameters.
-5) Select specific attribute
-6) Generate privtized image
+1) Pick an image.
+2) Run Latent_Optimizer.py
+3) Tune training parameters (Set learning rate, optimizer, number of iterations, and VGG16 layer weights for optimization, Loss function parameters).
+4) Generate a latent vector optimized.npy
+5) Load generated latent vector in PrivAI.ipynb
+6) Select specific attribute.
+7) Generate an image with differentially private attribute manipulation.
    
-```bash
-# Before running the following code, please first download
+```
+"""
+# Before running Latent_Optimizer.py
+1) the following code, please first download
 # the pre-trained ProgressiveGAN model on CelebA-HQ dataset,
 # and then place it under the folder ".models/pretrain/".
 LATENT_CODE_NUM=10
@@ -50,7 +53,9 @@ StyleGAN:
 
   ## Code Instruction
 
-  ### first code
+  ### first code: Optimizing Latent Representations
+
+  
 
   ### second code
 

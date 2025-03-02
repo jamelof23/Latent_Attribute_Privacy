@@ -46,32 +46,5 @@ StyleGAN:
   [[Paper](https://arxiv.org/pdf/1812.04948.pdf)]
   [[Code](https://github.com/NVlabs/stylegan)]
 
-
-  ## Code Instruction
-
-  ### first code: Optimizing Latent Representations
-
-  
-
-  ### second code
-
-
   ## BibTeX
 
-```bibtex
-@inproceedings{shen2020interpreting,
-  title     = {Interpreting the Latent Space of GANs for Semantic Face Editing},
-  author    = {Shen, Yujun and Gu, Jinjin and Tang, Xiaoou and Zhou, Bolei},
-  booktitle = {CVPR},
-  year      = {2020}
-}
-```
-
-```bibtex
-@article{shen2020interfacegan,
-  title   = {InterFaceGAN: Interpreting the Disentangled Face Representation Learned by GANs},
-  author  = {Shen, Yujun and Yang, Ceyuan and Tang, Xiaoou and Zhou, Bolei},
-  journal = {TPAMI},
-  year    = {2020}
-}
-```

@@ -26,12 +26,17 @@ In this repository, we propose a framework called PrivAI, which aims to privatiz
    
 ```
 # Before running Latent_Optimizer.py
-   * Download the model stylegan_ffhq.pth and place it in /models/interfacegan_official/models/pretrain, you can download from https://huggingface.co/spaces/ybelkada/interfacegan_pp/blob/main/models/pretrain/stylegan_ffhq.pth
-   * Pick up the file stylegan_generator.py from /enhanceed_files and replace the file in /models/interfacegan_official/models, the new file will enhance interfacegan official model by allowing gradient-based updates and supporting multi-GPU training.
+   * Download the model stylegan_ffhq.pth and place it in
+/models/interfacegan_official/models/pretrain, you can download from https://huggingface.co/spaces/ybelkada/interfacegan_pp/blob/main/models/pretrain/stylegan_ffhq.pth
+   * Pick up the file stylegan_generator.py from
+/enhanceed_files and replace the file in /models/interfacegan_official/models,
+ the new file will enhance interfacegan official model
+by allowing gradient-based updates and supporting multi-GPU training.
 
 
 # Before running PrivAI.ipynb
-   * Make sure to load optimized.npy which is the output of Latent_Optimizer.py or any 1×512 latent-vector in w space.
+   * Make sure to load optimized.npy which is the output of
+Latent_Optimizer.py or any 1×512 latent-vector in w space.
 ```
 
 ## Prior Work

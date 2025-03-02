@@ -32,7 +32,7 @@ In this repository, we propose a framework called PrivAI, which aims to privatiz
 
 # Before running PrivAI.ipynb
    * Make sure to load optimized.npy which is the output of Latent_Optimizer.py or any 1×512 latent-vector in w space.
-'''
+```
 
 ## Prior Work
 

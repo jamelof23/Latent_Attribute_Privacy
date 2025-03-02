@@ -5,4 +5,4 @@
 ![CUDA 11.7](https://img.shields.io/badge/cuda-11.7-green.svg?style=plastic)
 
 ![image](./docs/image1.jpg)
-**Figure:** *Differentially Private Imaging via Latent Space, ensuring differential privacy for specific facial attributes while preserving overall image quality results with PrivAI.*
+**Figure:** *Ensuring differential privacy for specific facial attributes while preserving overall image quality results with PrivAI.*

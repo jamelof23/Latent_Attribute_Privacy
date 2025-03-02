@@ -16,8 +16,13 @@ In this repository, we propose a framework called PrivAI, which aims to privatiz
 
 ## Startup Instructions
 
-Pick up a model, pick up a boundary, pick up a latent code, and then EDIT!
-
+1) Pick up an image.
+2) Tune training parameters.
+3) Generate a latent vector.
+4) Pick up privact parameters.
+5) Select specific attribute
+6) Generate privtized image
+   
 ```bash
 # Before running the following code, please first download
 # the pre-trained ProgressiveGAN model on CelebA-HQ dataset,

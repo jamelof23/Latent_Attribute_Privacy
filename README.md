@@ -16,7 +16,7 @@ In this repository, we propose a framework called PrivAI, which aims to privatiz
 
 ## Startup Instructions
 
-1) Pick an image.
+1) Pick an image (Preferably 1024x1024 high-quality ) .
 2) Run Latent_Optimizer.py
 3) Tune training parameters (Set learning rate, optimizer, number of iterations, and VGG16 layer weights for optimization, Loss function parameters).
 4) Generate a latent vector optimized.npy
@@ -25,18 +25,14 @@ In this repository, we propose a framework called PrivAI, which aims to privatiz
 7) Generate an image with differentially private attribute manipulation.
    
 ```
-"""
 # Before running Latent_Optimizer.py
-1) the following code, please first download
-# the pre-trained ProgressiveGAN model on CelebA-HQ dataset,
-# and then place it under the folder ".models/pretrain/".
-LATENT_CODE_NUM=10
-python edit.py \
-    -m pggan_celebahq \
-    -b boundaries/pggan_celebahq_smile_boundary.npy \
-    -n "$LATENT_CODE_NUM" \
-    -o results/pggan_celebahq_smile_editing
-```
+   * Download the model stylegan_ffhq.pth and place it in /models/interfacegan_official/models/pretrain, you can download from https://huggingface.co/spaces/ybelkada/interfacegan_pp/blob/main/models/pretrain/stylegan_ffhq.pth
+   * Pick up the file stylegan_generator.py from /enhanceed_files and replace the file in /models/interfacegan_official/models, the new file will enhance interfacegan official model by allowing gradient-based updates and supporting multi-GPU training.
+
+
+# Before running PrivAI.ipynb
+   * Make sure to load optimized.npy which is the output of Latent_Optimizer.py or any 1×512 latent-vector in w space.
+'''
 
 ## Prior Work
 

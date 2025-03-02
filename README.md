@@ -8,11 +8,11 @@
 **Figure:** *Ensuring differential privacy for specific facial attributes while preserving overall image quality results with PrivAI.*
 
 ## Introduction
-In this repository, we propose
+In this repository, we propose a framework called PrivAI, which aims to privatize specific attributes in high-resolution facial images by manipulating the latent spaces of generative models. These models can synthesize photorealistic images while ensuring privacy through differential privacy.
 
 [[Paper](https://arxiv.org/)]
-[[Project Page](https://genforce.github.io/interfacegan/)]
-[[Colab](https://colab.research.google.com/github/genforce/interfacegan/blob/master/docs/InterFaceGAN.ipynb)]
+[[Project Page](https://github.com/jamelof23/PrivAI)]
+[[Colab](https://colab.research.google.com/github/jamelof23/PrivAI/blob/master/docs/PrivAI.ipynb)]
 
 ## Startup Instructions
 

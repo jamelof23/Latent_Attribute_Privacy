@@ -27,7 +27,7 @@ In this repository, we propose a framework called PrivAI, which aims to privatiz
 ```
 # Before running Latent_Optimizer.py
    * Download the model stylegan_ffhq.pth and place it in /models/interfacegan_official/models/pretrain, you can download from https://huggingface.co/spaces/ybelkada/interfacegan_pp/blob/main/models/pretrain/stylegan_ffhq.pth
-   * Pick up the file stylegan_generator.py from /enhanceed_files and replace the file in /models/interfacegan_official/models, the new file will enhance interfacegan official model by allowing gradient-based updates and supporting multi-GPU training.
+   * Pick up the file stylegan_generator.py from /enhanceed_files and replace the file in /models/interfacegan_official/models, the new file will enhance InterFaceGAN official model by allowing gradient-based updates and supporting multi-GPU training.
 
 
 # Before running PrivAI.ipynb
@@ -36,15 +36,17 @@ In this repository, we propose a framework called PrivAI, which aims to privatiz
 
 ## Prior Work
 
-Before going into details, we would like to first introduce the two state-of-the-art GAN models used in this work, which are ProgressiveGAN (Karras *el al.*, ICLR 2018) and StyleGAN (Karras *et al.*, CVPR 2019). These two models achieve high-quality face synthesis by learning unconditional GANs. For more details about these two models, please refer to the original papers, as well as the official implementations.
-
-ProgressiveGAN:
-  [[Paper](https://arxiv.org/pdf/1710.10196.pdf)]
-  [[Code](https://github.com/tkarras/progressive_growing_of_gans)]
+Our work builds on InterFaceGAN for semantic face editing, which primarily relies on StyleGAN. However, we have enhanced the InterFaceGAN generator to support optimization with multiple GPUs. Additionally, we modified their Colab implementation to incorporate noised differential privacy. To achieve this, we used their boundaries in W space, which were trained using a StyleGAN model on the FF-HQ dataset, to ensure privacy in attribute manipulation.
 
 StyleGAN:
   [[Paper](https://arxiv.org/pdf/1812.04948.pdf)]
   [[Code](https://github.com/NVlabs/stylegan)]
+  
+InterFaceGAN:
+  [[Paper](https://arxiv.org/pdf/2005.09635)]
+  [[Code](https://github.com/genforce/interfacegan)]
+
+
 
   ## BibTeX
 

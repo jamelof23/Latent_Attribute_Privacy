@@ -16,7 +16,7 @@ interfacegan_path = os.path.join(script_dir, 'interfacegan-master')
 if interfacegan_path not in sys.path:
     sys.path.append(interfacegan_path)
 
-from models.stylegan_generator import StyleGANGenerator
+from models.interfacegan_official.models.stylegan_generator import StyleGANGenerator
 
 # Define device based on CUDA availability
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")

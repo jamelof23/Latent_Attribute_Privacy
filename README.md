@@ -12,7 +12,7 @@ In this repository, we propose a framework called PrivAI, which aims to privatiz
 
 [[Paper](https://arxiv.org/)]
 [[Project Page](https://github.com/jamelof23/PrivAI)]
-[[Colab](https://colab.research.google.com/github/jamelof23/PrivAI/blob/master/docs/PrivAI.ipynb)]
+[[Colab](https://colab.research.google.com/github/jamelof23/PrivAI/blob/main/docs/PrivAI.ipynb)]
 
 ## Startup Instructions
 

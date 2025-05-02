@@ -1,18 +1,18 @@
-# PrivAI - Ensuring Privacy in Latent Space: Differentially Private Image Generation
+# Ensuring Privacy in Latent Space: Differentially Private Image Generation
 
 ![Python 3.8](https://img.shields.io/badge/python-3.8-green.svg?style=plastic)
 ![PyTorch 2.0.1+cu117](https://img.shields.io/badge/pytorch-2.0.1%2Bcu117-green.svg?style=plastic)
 ![CUDA 11.7](https://img.shields.io/badge/cuda-11.7-green.svg?style=plastic)
 
 ![image](./docs/image1.jpg)
-**Figure:** *Ensuring differential privacy for specific facial attributes while preserving overall image quality results with PrivAI.*
+**Figure:** *Ensuring differential privacy for specific facial attributes while preserving overall image quality results.*
 
 ## Introduction
-In this repository, we propose a framework called PrivAI, which aims to privatize specific attributes in high-resolution facial images by manipulating the latent spaces of generative models. These models can synthesize photorealistic images while ensuring privacy through differential privacy.
+In this repository, we propose a framework, which aims to privatize specific attributes in high-resolution facial images by manipulating the latent spaces of generative models. These models can synthesize photorealistic images while ensuring privacy through differential privacy.
 
 [[Paper](https://arxiv.org/)]
-[[Project Page](https://github.com/jamelof23/PrivAI)]
-[[Colab](https://colab.research.google.com/github/jamelof23/PrivAI/blob/main/docs/PrivAI.ipynb)]
+[[Project Page](https://github.com/jamelof23/Latent_Attribute_Privacy)]
+[[Colab](https://colab.research.google.com/github/jamelof23/Latent_Attribute_Privacy/blob/main/docs/Latent_Attribute_Privacy.ipynb)]
 
 ## Startup Instructions
 
@@ -20,7 +20,7 @@ In this repository, we propose a framework called PrivAI, which aims to privatiz
 2) Run Latent_Optimizer.py
 3) Tune training parameters (Set learning rate, optimizer, number of iterations, and VGG16 layer weights for optimization, Loss function parameters).
 4) Generate a latent vector optimized.npy
-5) Load generated latent vector in PrivAI.ipynb
+5) Load generated latent vector in Latent_Attribute_Privacy.ipynb
 6) Select specific attribute.
 7) Generate an image with differentially private attribute manipulation.
    
@@ -30,7 +30,7 @@ In this repository, we propose a framework called PrivAI, which aims to privatiz
    * Pick up the file stylegan_generator.py from /enhanceed_files and replace the file in /models/interfacegan_official/models, the new file will enhance InterFaceGAN official model by allowing gradient-based updates and supporting multi-GPU training.
 
 
-# Before running PrivAI.ipynb
+# Before running Latent_Attribute_Privacy.ipynb
    * Make sure to load optimized.npy which is the output of Latent_Optimizer.py or any 1×512 latent-vector in w space.
 ```
 
